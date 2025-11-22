@@ -20,12 +20,13 @@ namespace Pizza_Toshmatov
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string localPath;
+        public string localPath;
 
         public MainWindow()
         {
             InitializeComponent();
             localPath = System.IO.Directory.GetCurrentDirectory();
+
             OpenPages(pages.main);
         }
 
